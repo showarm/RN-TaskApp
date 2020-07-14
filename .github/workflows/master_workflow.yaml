@@ -1,0 +1,14 @@
+name: Daily routines
+on:
+  push:
+    branches:
+      - githubci
+  pull_request:
+
+jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run Unit tests.
+        run: echo 'hh'
